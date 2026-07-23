@@ -1,0 +1,168 @@
+.hero {
+  padding: 40px 48px 80px;
+}
+
+/* Photo now fills the whole card; the text is a floating "window" on top of it */
+.hero-card {
+  position: relative;
+  min-height: 640px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background-color: var(--accent-blue-light);
+  background-image: url('/images/Foto_oblozhka.png'); /* файл лежить у public/images/ */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: var(--shadow-card);
+}
+
+.hero-content {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  bottom: 20px;
+  width: 58%;
+  max-width: 560px;
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-card);
+  padding: 48px 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hero-icons {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  display: flex;
+  gap: 8px;
+}
+
+.icon-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--surface-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.icon-btn:hover {
+  background: var(--accent-blue-light);
+}
+
+.hero-icon {
+  width: 56px;
+  height: 56px;
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+.hero-content h1 {
+  font-size: clamp(26px, 3vw, 34px);
+  line-height: 1.2;
+}
+
+.hero-lead {
+  font-size: 15px;
+  color: var(--text-secondary);
+}
+
+.hero-cta {
+  align-self: flex-start;
+  margin-top: 4px;
+}
+
+.hero-proof {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.avatar-stack {
+  display: flex;
+}
+
+.avatar-stack .avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--accent-blue-light);
+  border: 2px solid var(--surface);
+  margin-left: -10px;
+}
+
+.avatar-stack .avatar:first-child {
+  margin-left: 0;
+}
+
+.hero-proof-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.stars {
+  color: var(--accent-green);
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+.hero-subtext {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.hero-badge {
+  position: absolute;
+  right: 20px;
+  bottom: 24px;
+  max-width: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.hero-badge strong {
+  font-size: 14px;
+  color: var(--accent-green-dark);
+}
+
+.hero-badge span {
+  font-size: 12.5px;
+  color: var(--accent-green-dark);
+  opacity: 0.85;
+}
+
+@media (max-width: 860px) {
+  .hero {
+    padding: 20px 16px 48px;
+  }
+
+  .hero-card {
+    min-height: 640px;
+  }
+
+  .hero-content {
+    position: static;
+    width: auto;
+    max-width: none;
+    margin: 16px;
+    padding: 32px 24px;
+  }
+
+  .hero-badge {
+    position: static;
+    margin: 0 16px 16px;
+  }
+}
