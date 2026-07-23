@@ -36,6 +36,8 @@ export default function Hero() {
           </div>
         </div>
 
+        <span className="hero-photo-caption">Gabinet Stomatologiczny</span>
+
         <div className="badge-offer hero-badge">
           <strong>Konsultacja wstępna</strong>
           <span>Pierwsza wizyta z pełną diagnostyką — plan leczenia i koszt przed rozpoczęciem</span>

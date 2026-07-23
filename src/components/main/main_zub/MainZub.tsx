@@ -23,7 +23,7 @@ export default function MainZub() {
             <div className="zub-ring zub-ring-2" />
 
             <div className="zub-photo">
-              <img src="/images/usmichka.jfif" alt="Zdrowy, biały uśmiech" />
+              <img src="/images/usmichka.webp" alt="Zdrowy, biały uśmiech" />
             </div>
 
             <span className="pill zub-tag zub-tag-top">Wpływ na samoocenę</span>

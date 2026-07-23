@@ -8,7 +8,14 @@ export default function Footer() {
           Dariusz Łasut <span className="text-accent">· Stomatologia</span>
         </span>
         <div className="footer-contact">
-          <span>ul. Macedońska 3, 51-113 Wrocław</span>
+          
+            <a href="https://www.google.com/maps/search/?api=1&query=ul.+Macedo%C5%84ska+3%2C+51-113+Wroc%C5%82aw"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-address"
+          >
+            ul. Macedońska 3, 51-113 Wrocław
+          </a>
           <a href="tel:+48696424404">696 424 404</a>
         </div>
       </div>

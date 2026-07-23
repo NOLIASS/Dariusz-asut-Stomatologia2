@@ -4,6 +4,15 @@
   padding: 36px 48px;
 }
 
+.footer-address {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-address:hover {
+  text-decoration: underline;
+}
+
 .footer-top {
   display: flex;
   align-items: flex-start;

@@ -26,7 +26,7 @@ export default function MainProp() {
           </div>
 
           <div className="prop_2">
-            <img src="/images/images.jfif" alt="Wnętrze gabinetu stomatologicznego" />
+            <img src="/images/images.webp" alt="Wnętrze gabinetu stomatologicznego" />
           </div>
 
           <div className="prop_3">
